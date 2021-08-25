@@ -1,7 +1,7 @@
 def method_kwargs(**kwargs):
     print(type(kwargs))
-    for key in kwargs:
-        print(kwargs[key])
+    for key, value in kwargs.items():
+        print(f'{key}: {value}')
 
 
 def method_args(*args):
